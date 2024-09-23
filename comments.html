@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التعليقات</title>
+    <link rel="stylesheet" href="comments.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top">
+        <a class="navbar-brand" href="#">اليوم الوطني السعودي</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="comments.html">الصفحة الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-logout" onclick="logout()">تسجيل الخروج</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="logoND">
+    <img src="ND94-LOGO-HORIZONTAL-WHITE.png" alt="" width="40%">
+    </div>  
+    <div class="container">
+        <h1 style="padding-top: 40px; padding-bottom: 15px;">ما الذي يجعلك فخورًا بالسعودية؟</h1>
+        
+        <form id="prideForm">
+            <label for="message" class="msgwr">:اكتب رسالتك</label>
+            <textarea id="message" rows="4" placeholder="اكتب شيء إذا ذكرته يزيد فخرك في السعودية؟"></textarea>
+            <button type="submit">أضف الرسالة</button>
+        </form>
+
+        <div class="all-messages">
+            <h2>:جميع الرسائل</h2>
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="comments.js"></script>
+</body>
+</html>

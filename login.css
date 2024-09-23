@@ -1,0 +1,152 @@
+body {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    background-image: url('https://almdani.com/wp-content/uploads/2023/09/IMG_4168.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95); 
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    color: #2a9d8f;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: right; 
+}
+
+input {
+    width: 95%; 
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    text-align: right; 
+    box-sizing: border-box; 
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    direction: rtl;
+}
+
+input::placeholder {
+    text-align: right; 
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    direction: rtl;
+}
+
+button {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #21867a;
+    font-weight: 600;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .login-container {
+        max-width: 400px; 
+        margin: 0 auto; 
+    }
+
+    h1 {
+        font-size: 1.8em; 
+        margin-bottom: 20px;
+    }
+
+    input, button {
+        font-size: 1em; 
+    }
+
+    label {
+        font-size: 1em; 
+    }
+
+    p {
+        font-size: 14px; 
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .login-container {
+        max-width: 90%;
+        margin: 0 10px; 
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    input, button {
+        font-size: 0.9em;
+    }
+
+    label {
+        font-size: 0.9em;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .login-container {
+        max-width: 95%;
+        margin: 0 5px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    input, button {
+        padding: 8px;
+        font-size: 0.8em;
+    }
+
+    label {
+        font-size: 0.8em;
+    }
+
+    p {
+        font-size: 11px;
+    }
+}
